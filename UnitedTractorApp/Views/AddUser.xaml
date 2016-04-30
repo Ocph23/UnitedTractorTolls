@@ -1,0 +1,43 @@
+﻿<f:MetroWindow x:Class="UnitedTractorApp.Views.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnitedTractorApp.Views"
+        xmlns:f="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="AddUser" Height="362.03" Width="431.954" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220*"/>
+            <RowDefinition Height="91*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="84*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="1" Grid.RowSpan="2">
+            <Label Content="User Name"/>
+            <TextBox Text="{Binding UserName}" Margin="0,0,0,10" Height="30" Background="{x:Null}"/>
+            <Label Content="Password"/>
+            <TextBox Margin="0,0,0,10" Text="{Binding Password}" Height="30" Background="{x:Null}"/>
+            <Label Content="Ulangi Password"/>
+            <TextBox Margin="0,0,0,10" Text="{Binding ConfirmPassword}" Height="30" Background="{x:Null}"/>
+            <Label Content="Access Level"/>
+            <ComboBox ItemsSource="{Binding AccessLevelSource}" Height="30"/>
+
+
+        </StackPanel>
+        <StackPanel  Grid.Column="1" Grid.RowSpan="2">
+            <Button Margin="10,10,10,10" Height="200" Command="{Binding ChangePhoto}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/UnitedTractorApp;component/Images/Ocph23.jpg"/>
+                </Button.Background>
+
+            </Button>
+        </StackPanel>
+        <Button Style="{StaticResource SimpleButton}" Content="Simpan" Command="{Binding CmdSave}"  Margin="21,21,100,35" Grid.Column="1" Grid.Row="1" Height="Auto" Width="Auto"/>
+        <Button Style="{StaticResource SimpleButton}" Content="Batal" Command="{Binding CmdCancel}"  Margin="101,21,20,35" Grid.Column="1" Grid.Row="1" Height="Auto" Width="Auto"/>
+    </Grid>
+</f:MetroWindow>

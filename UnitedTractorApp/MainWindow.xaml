@@ -1,0 +1,15 @@
+﻿<mah:MetroWindow x:Class="UnitedTractorApp.MainWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 
+        Title="Login"  WindowState="Maximized"  >
+    <mah:MetroWindow.Background>
+        <ImageBrush Opacity="10" ImageSource="Images/Hyundai_Excavator.jpg">
+            
+        </ImageBrush>
+        
+    </mah:MetroWindow.Background>
+    <Grid/>
+
+</mah:MetroWindow>

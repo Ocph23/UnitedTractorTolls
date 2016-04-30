@@ -1,0 +1,24 @@
+﻿<Window x:Class="UnitedTractorApp.Views.CreatePengembalian"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CreatePengembalian" Height="412" Width="524" Background="{DynamicResource ChildBackground}">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding DataSourceView}" HorizontalAlignment="Left" 
+                  
+                  Margin="20,85,0,0" VerticalAlignment="Top" Height="160" Width="465">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nomor Seri" Binding="{Binding TollItem.NomorSeri}"/>
+                <DataGridTextColumn Header="Kode Perkakas" Binding="{Binding TollKode}"/>
+                <DataGridTextColumn Header="Nama Perkakas" Binding="{Binding TollName}"/>
+                <DataGridTextColumn Header="Keadaan Perkakas" Binding="{Binding KeadaaTolls}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <ComboBox ItemsSource="{Binding ComboItemsView}" DisplayMemberPath="TollKode"
+                  SelectedItem="{Binding SelectedItem,UpdateSourceTrigger=PropertyChanged}"
+            HorizontalAlignment="Left" Margin="85,33,0,0" VerticalAlignment="Top" Width="190" Height="32" Background="{x:Null}"/>
+        <Button Content="Button" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="355,264,0,0" VerticalAlignment="Top" Width="65" Height="41"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="425,264,0,0" VerticalAlignment="Top" Width="65" Height="41"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E33EA97A-2CCA-4DD5-B0FE-BEDD784148BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitedTractorLib</RootNamespace>
+    <AssemblyName>UnitedTractorLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnitedTractorApp\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ContextFactory.cs" />
+    <Compile Include="Contexts\Gudang\RepositoryPelanggaran.cs" />
+    <Compile Include="Contexts\Gudang\RepositoryPengembalian.cs" />
+    <Compile Include="Contexts\Customer\RepositoryCustomer.cs" />
+    <Compile Include="Contexts\Peminjaman\RepositoryPeminjaman.cs" />
+    <Compile Include="Contexts\Pengadaan\RepositoryKategori.cs" />
+    <Compile Include="Contexts\Pengadaan\RepositoryTolls.cs" />
+    <Compile Include="Contexts\Pengadaan\RepositoryTransaksiStock.cs" />
+    <Compile Include="Contexts\User\RepositoryUser.cs" />
+    <Compile Include="DTO\ModelsDTO.cs" />
+    <Compile Include="IViewModelBase.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Kategori.cs" />
+    <Compile Include="Models\Pelanggaran.cs" />
+    <Compile Include="Models\Peminjaman.cs" />
+    <Compile Include="Models\PeminjamanDetails.cs" />
+    <Compile Include="Models\Pengembalian.cs" />
+    <Compile Include="Models\PengembalianDetails.cs" />
+    <Compile Include="Models\Permintaan.cs" />
+    <Compile Include="Models\PermintaanDetails.cs" />
+    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Models\Tolls.cs" />
+    <Compile Include="Models\TollsDetails.cs" />
+    <Compile Include="Models\TransaksiStock.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="MyEnumCollection.cs" />
+    <Compile Include="OcphDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IRepositoryContext.cs" />
+    <Compile Include="ViewModelBase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

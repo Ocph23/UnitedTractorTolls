@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UnitedTractorLib.Class1" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Common" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.ContextFactory" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAACAAAAAAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAEA=</HashCode>
+      <FileName>ContextFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.OcphDbContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFQACBUgCAAAQkAEAQBBAAAgAAwQAAAgAAAIAgAgAA=</HashCode>
+      <FileName>OcphDbContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnitedTractorLib.ViewModelBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Customer.RepositoryCustomer" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAEAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAQAACAAA=</HashCode>
+      <FileName>Contexts\Customer\RepositoryCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Gudang.RepositoryPelanggaran" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAACAAAAAAAAAAEAAAAAAAAAQAACAAA=</HashCode>
+      <FileName>Contexts\Gudang\RepositoryPelanggaran.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Gudang.RepositoryPengembalian" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAECAAAAAAAAAAAAAAAAAAEEAAAAACAAAQAAAAAA=</HashCode>
+      <FileName>Contexts\Gudang\RepositoryPengembalian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Peminjaman.RepositoryPeminjaman" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAABAAAAAAAEAAGAAAAAAAIAAAAAAYAAAAAA=</HashCode>
+      <FileName>Contexts\Peminjaman\RepositoryPeminjaman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Pengadaan.RepositoryKategori" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAEAAgAAAAAACAAAAAAAAAAEAAAAAAAAAQAACCAA=</HashCode>
+      <FileName>Contexts\Pengadaan\RepositoryKategori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Pengadaan.RepositoryTolls" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAEACABQGAAAAAAEAAAAAAAAAQBACABA=</HashCode>
+      <FileName>Contexts\Pengadaan\RepositoryTolls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.Pengadaan.RepositoryTransaksiStock" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAACAABAAIAAAAEAAAAAAAAAQAACAAA=</HashCode>
+      <FileName>Contexts\Pengadaan\RepositoryTransaksiStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Contexts.User.RepositoryUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAGAAAAAAAAACAAAAAAAAAAEAAIAAAAAQQAgCAAA=</HashCode>
+      <FileName>Contexts\User\RepositoryUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.UsersDTO" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.DendaDTO" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIACAAAAAAAAAAAAIAAAgAAAAAAAAAAAACAAAAI=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.DendaDetailDTO" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAQAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.HistoryDTO" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAQAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.CustomerDTO" Collapsed="true">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAACAAgAAAQAAAAAAAAAIAAAAAAAAAQQA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PelanggaranDTO" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAAAAAAAIgAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PelanggaranDetailDTO" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PeminjamanDTO" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAIAAAAAIIAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PeminjamanDetailDTO" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAQAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PengembalianDTO" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PengembalianDetailDTO" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAAAAAAAAIAAAEAAAAAAAAAAAAAg=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PermintaanDTO" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.PermintaanDetailDTO" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.StockDTO" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.SettingDTO" Collapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.TransaksiStockDTO" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAACQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.KategoriDTO" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAYAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.TollsDTO" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAYAAAAgAAEAAAAAAAAgAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.TollsDetailsDTO" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAEQAAAAAAEAAAAAABgAAAQAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.DTO.HargaSewaDTO" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ModelsDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Customer" Collapsed="true">
+    <Position X="3.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Kategori">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAA=</HashCode>
+      <FileName>Models\Kategori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Pelanggaran" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pelanggaran.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Peminjaman" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAABAIAACAAAAAAAIAAABACAAAAAAACAAAA=</HashCode>
+      <FileName>Models\Peminjaman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.PeminjamanDetails" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACiAAAAAAAAAAAAAoAAAAAAAgAAIQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PeminjamanDetails.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Pengembalian" Collapsed="true">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pengembalian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.PengembalianDetails" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PengembalianDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Permintaan" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Permintaan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Stock" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Stock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.Tolls" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAABACAAAAAAAAAAgAAAAACAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\Tolls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.TollsDetails" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TollsDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.TransaksiStock" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TransaksiStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitedTractorLib.Models.User" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="UnitedTractorLib.IViewModelBase" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnitedTractorLib.Repository.IRepositoryContext&lt;T&gt;" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAACAAAAAAAAAAEAAAAAAAAAQAACAAA=</HashCode>
+      <FileName>Repository\IRepositoryContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="UnitedTractorLib.JenisPelanggaran" Collapsed="true">
+    <Position X="13.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyEnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnitedTractorLib.StatusTolls" Collapsed="true">
+    <Position X="17.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>MyEnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnitedTractorLib.StatusStock" Collapsed="true">
+    <Position X="15.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>MyEnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnitedTractorLib.AccessLevel" Collapsed="true">
+    <Position X="12" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>MyEnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

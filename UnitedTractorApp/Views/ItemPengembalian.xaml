@@ -1,0 +1,15 @@
+﻿<Window x:Class="UnitedTractorApp.Views.ItemPengembalian"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ItemPengembalian" Height="387" Width="454" Background="{DynamicResource ChildBackground}">
+    <Grid>
+        <ComboBox ItemsSource="{Binding StatusTolls}" SelectedItem="{Binding SelectedItem,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="143,195,0,0" VerticalAlignment="Top" Width="120" Height="26" Background="{x:Null}"/>
+        <Expander Header="Expander" HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Height="170" Width="405">
+            <Grid Background="#FFE5E5E5"/>
+        </Expander>
+        <Button Background="Green" Style="{StaticResource CircleButton}" Content="Tambah" HorizontalAlignment="Left" Margin="260,268,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click"/>
+        <TextBox Name="txtKeterangan" HorizontalAlignment="Left" Height="22" Margin="143,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Batal" Style="{StaticResource CircleButton}" HorizontalAlignment="Left" Margin="340,268,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" />
+
+    </Grid>
+</Window>

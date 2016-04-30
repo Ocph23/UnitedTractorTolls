@@ -1,0 +1,41 @@
+﻿<Window x:Class="UnitedTractorApp.Views.Peminjaman"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:f="http://metro.mahapps.com/winfx/xaml/controls" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource ChildBackground}"
+        Title="Tambah Peminjaman" Height="549.328" Width="799.371">
+
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <Grid >
+
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding collection}" CanUserAddRows="False" SelectedItem="SelectedItem" HorizontalAlignment="Left" Margin="22,141,0,109" Width="753">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Kode" Width="150" Binding="{Binding Kode,UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Nama" Width="200" Binding="{Binding Name,UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Status" Width="100" Binding="{Binding Ketersediaan,UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Keterangan" Width="300" Binding="{Binding Keterangan,UpdateSourceTrigger=PropertyChanged}"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Tambah Tolls" Command="{Binding AddNewTolls,UpdateSourceTrigger=PropertyChanged}"></MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <ComboBox ItemsSource="{Binding KaryawanCollection}" SelectedValuePath="Id" DisplayMemberPath="Nama" SelectedValue="{Binding KaryawanID }" f:TextBoxHelper.Watermark="Nama" HorizontalAlignment="Left" Margin="175,52,0,0" VerticalAlignment="Top" Width="202" Height="31"/>
+        <DatePicker f:TextBoxHelper.Watermark="Tanggal" HorizontalAlignment="Left" Margin="175,88,0,0" VerticalAlignment="Top" Width="202" Height="29"/>
+        <TextBox f:TextBoxHelper.Watermark="Kode " IsEnabled="False" HorizontalAlignment="Left" Height="28" Margin="175,19,0,0" TextWrapping="Wrap" 
+                 Text="{Binding Kode,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="202"/>
+        <Button Style="{StaticResource SimpleButton}"  Name="cmdProssess" Command="{Binding CekKetersediaan, UpdateSourceTrigger=PropertyChanged}" 
+                Content="{Binding CmdProccessContent,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="571,430,0,0" 
+                VerticalAlignment="Top" Width="94" ></Button>
+        <Button Style="{StaticResource SimpleButton}" x:Name="cmdProssess_Copy" Command="{Binding Cancel, UpdateSourceTrigger=PropertyChanged}" Content="Batal"
+                HorizontalAlignment="Left" Margin="672,430,0,0" VerticalAlignment="Top" Width="94"  />
+        <Label x:Name="label" Content="Kode Peminjaman" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Pelanggan" HorizontalAlignment="Left" Margin="22,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Tanggal Pinjam" HorizontalAlignment="Left" Margin="22,88,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

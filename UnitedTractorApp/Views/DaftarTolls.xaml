@@ -1,0 +1,78 @@
+﻿<Page x:Class="UnitedTractorApp.Views.DaftarTolls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DaftarTolls"  >
+    <Page.OpacityMask>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFC5C513" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.OpacityMask>
+    <Grid Style="{StaticResource ContentRoot}" Margin="16,28,10,16">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="461*"/>
+            <ColumnDefinition Width="204*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" >
+            <TextBlock HorizontalAlignment="Left" Text="DAFTAR PERKAKAS" FontSize="18" FontWeight="Bold" Margin="0,20"  />
+            <Button ToolTip="Tambah" Style="{DynamicResource MetroCircleButtonStyle}" Command="{Binding CmdAdd}"  HorizontalAlignment="Left" Width="40" Height="41"  >
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource AccentColor}"/>
+                </Button.BorderBrush>
+                <Path Width="21" Height="20"  Stretch="Fill" Data="F1 M 35,19L 41,19L 41,35L 57,35L 57,41L 41,41L 41,57L 35,57L 35,41L 19,41L 19,35L 35,35L 35,19 Z ">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF244D14" Offset="0"/>
+                            <GradientStop Color="#FF4AD117" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+            </Button>
+            <StackPanel  >
+                <Expander Header="Daftar Perkakas" IsExpanded="True">
+                    <DataGrid  CanUserDeleteRows="False" RowHeight="30"
+            	ItemsSource="{Binding DataSource,UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False" CanUserAddRows="False"
+            	SelectedItem="{Binding SelectedItem}"  VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Left" 
+                       Foreground="#FF570F0F"
+            	BorderBrush="{x:Null}" MinRowHeight="26" Background="{x:Null}" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="100" Header="Kode" Binding="{Binding Kode, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Width="200" Header="Nama" Binding="{Binding Nama, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Width="200" Header="Kategori" Binding="{Binding Kategori.Nama, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Width="100" Header="Stock" Binding="{Binding Stock.Jumlah, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Width="120" Header="Harga Sewa" Binding="{Binding HargaSewa.Harga, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Width="150" Header="Denda Perhari" Binding="{Binding HargaSewa.Denda, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        </DataGrid.Columns>
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Tambah" Height="34" Command="{Binding CmdAdd}"/>
+                                <MenuItem Header="Edit" Height="34" Command="{Binding CmdEdit}"/>
+                                <MenuItem Header="Hapus" Height="34" Command="{Binding CmdDelete}"/>
+                                <MenuItem Header="Details" Height="34" Command="{Binding CmdDetails}"/>
+                                <MenuItem Header="Set Harga Sewa" Height="34" Command="{Binding CmdHargaSewa}"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+
+                </Expander>
+      
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Expander IsExpanded="True" HorizontalAlignment="Left" Header="Item Perkakas" Margin="5,60,5,5">
+                <DataGrid ItemsSource="{Binding SelectedItem.Details}" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nomor Seri" Binding="{Binding  NomorSeri}"/>
+                        <DataGridTextColumn Header="Keadaan" Binding="{Binding  Status}"/>
+                        <DataGridTextColumn Header="Kondisi(%)" Binding="{Binding  Kondisi}"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding StatusInStock}"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </Expander>
+        </StackPanel>
+
+    </Grid>
+</Page>

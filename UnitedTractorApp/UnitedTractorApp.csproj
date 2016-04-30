@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB62F109-4F1B-4492-9C37-83B70244DBCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitedTractorApp</RootNamespace>
+    <AssemblyName>UnitedTractorApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="FirstFloor.ModernUI">
+      <HintPath>..\packages\ModernUI.WPF.1.0.8\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.3.0.44, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MahApps.Metro.1.3.0-ALPHA044\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0-ALPHA044\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="ImageHelpers.cs" />
+    <Compile Include="MainApp.xaml.cs">
+      <DependentUpon>MainApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Models\BuktiPengembalian.cs" />
+    <Compile Include="Reports\Models\MBuktiPemayaran.cs" />
+    <Compile Include="Reports\Models\Peminjaman.cs" />
+    <Compile Include="Reports\Models\Perkakas.cs" />
+    <Compile Include="Reports\Views\BuktiPembayaran.xaml.cs">
+      <DependentUpon>BuktiPembayaran.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Views\BuktiPengembalian.xaml.cs">
+      <DependentUpon>BuktiPengembalian.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Views\LaporanPerkakas.xaml.cs">
+      <DependentUpon>LaporanPerkakas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ViewModels\AddUserVM.cs" />
+    <Compile Include="ViewModels\DaftarKategoriVM.cs" />
+    <Compile Include="ViewModels\DaftarPeminjamanVM.cs" />
+    <Compile Include="ViewModels\DaftarPengembalianVM.cs" />
+    <Compile Include="ViewModels\DaftarTollsVM.cs" />
+    <Compile Include="ViewModels\KaryawansVM.cs" />
+    <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\PeminjamanVM.cs" />
+    <Compile Include="ViewModels\CreatePengembalianVM.cs" />
+    <Compile Include="ViewModels\Request.cs" />
+    <Compile Include="ViewModels\SetHargaSewaVM.cs" />
+    <Compile Include="ViewModels\TambahKaryawanVM.cs" />
+    <Compile Include="ViewModels\TambahKategoriVM.cs" />
+    <Compile Include="ViewModels\TambahTransaksiStockVM.cs" />
+    <Compile Include="ViewModels\TransactionStockVM.cs" />
+    <Compile Include="ViewModels\TambahTollsVM.cs" />
+    <Compile Include="ViewModels\UsersVM.cs" />
+    <Compile Include="Views\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BrowseTolls.xaml.cs">
+      <DependentUpon>BrowseTolls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreatePengembalian.xaml.cs">
+      <DependentUpon>CreatePengembalian.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DaftarKategori.xaml.cs">
+      <DependentUpon>DaftarKategori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DaftarPeminjaman.xaml.cs">
+      <DependentUpon>DaftarPeminjaman.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DaftarTolls.xaml.cs">
+      <DependentUpon>DaftarTolls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailsTolls.xaml.cs">
+      <DependentUpon>DetailsTolls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemPengembalian.xaml.cs">
+      <DependentUpon>ItemPengembalian.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KaryawanDetails.xaml.cs">
+      <DependentUpon>KaryawanDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Karyawans.xaml.cs">
+      <DependentUpon>Karyawans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Peminjaman.xaml.cs">
+      <DependentUpon>Peminjaman.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pengembalian.xaml.cs">
+      <DependentUpon>Pengembalian.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SetHargaSewa.xaml.cs">
+      <DependentUpon>SetHargaSewa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TambahKaryawan.xaml.cs">
+      <DependentUpon>TambahKaryawan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TambahKategori.xaml.cs">
+      <DependentUpon>TambahKategori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TambahTolls.xaml.cs">
+      <DependentUpon>TambahTolls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TambahTransaksiStock.xaml.cs">
+      <DependentUpon>TambahTransaksiStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransactionStock.xaml.cs">
+      <DependentUpon>TransactionStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Users.xaml.cs">
+      <DependentUpon>Users.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainApp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reports\Views\BuktiPembayaran.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reports\Views\BuktiPengembalian.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reports\Views\LaporanPerkakas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\MyThema.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BrowseTolls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreatePengembalian.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DaftarKategori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DaftarPeminjaman.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DaftarTolls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DetailsTolls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ItemPengembalian.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KaryawanDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Karyawans.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Peminjaman.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pengembalian.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SetHargaSewa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TambahKaryawan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TambahKategori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TambahTolls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TambahTransaksiStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TransactionStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Users.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\BuktiPengembalian.rdlc" />
+    <EmbeddedResource Include="Reports\Layouts\DaftarPerkakas.rdlc" />
+    <EmbeddedResource Include="Reports\Layouts\LBuktiPembayaran.rdlc" />
+    <None Include="Graph1.dgml" />
+    <None Include="MahApps.Metro.1.1.2.0\MahApps.Metro.1.1.2.0.nupkg" />
+    <None Include="MahApps.Metro.1.1.2.0\MahApps.Metro.1.1.2.0.nuspec" />
+    <None Include="MahApps.Metro.1.1.2.0\tools\install.ps1" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\UnitedTractorApp.Reports.Models.BuktiPengembalian.datasource" />
+    <None Include="Properties\DataSources\UnitedTractorApp.Reports.Models.MBuktiPemayaran.datasource" />
+    <None Include="Properties\DataSources\UnitedTractorApp.Reports.Models.Peminjaman.datasource" />
+    <None Include="Properties\DataSources\UnitedTractorApp.Reports.Models.Perkakas.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitedTractorLib\UnitedTractorLib.csproj">
+      <Project>{e33ea97a-2cca-4dd5-b0fe-bedd784148bf}</Project>
+      <Name>UnitedTractorLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Ocph23.jpg" />
+    <Resource Include="Images\Hyundai_Excavator.jpg" />
+    <Resource Include="Images\main.jpg" />
+    <Resource Include="Images\Child.jpg" />
+    <Resource Include="Images\abstract-yellow-background.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Resource Include="Images\medical3.jpg" />
+    <Content Include="MahApps.Metro.1.1.2.0\lib\net40\MahApps.Metro.dll" />
+    <Resource Include="MahApps.Metro.1.1.2.0\lib\net40\MahApps.Metro.XML" />
+    <Content Include="MahApps.Metro.1.1.2.0\lib\net40\System.Windows.Interactivity.dll" />
+    <Content Include="MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll" />
+    <Resource Include="MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.XML" />
+    <Content Include="MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
